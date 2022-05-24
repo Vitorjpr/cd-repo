@@ -1,11 +1,13 @@
 replicaCount: 1
 image:
-  repository: nginx
+  repository: vitorjpr/api-go
   pullPolicy: IfNotPresent
-  tag: stable
+  tag: v3
 env:
-- name: ECHO_LABEL
-  value: Este eh um container para testes em dev
+- name: APP_VERSION
+  value: v3
+- name: APP_ENV
+  value: dev
 imagePullSecrets: []
 nameOverride: ''
 fullnameOverride: ''
