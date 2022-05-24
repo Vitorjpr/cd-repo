@@ -11,7 +11,7 @@ spec:
   source:
     repoURL: git@github.com:Vitorjpr/cd-repo.git
     targetRevision: HEAD
-    path: charts/sample
+    path: charts/sample-go
 
     # helm specific config
     helm:
