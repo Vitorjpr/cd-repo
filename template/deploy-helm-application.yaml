@@ -9,9 +9,9 @@ spec:
   project: helm-deployments
   # Source of the application manifests
   source:
-    repoURL: 
+    repoURL: git@github.com:Vitorjpr/cd-repo.git
     targetRevision: HEAD
-    path: 
+    path: charts/sample
 
     # helm specific config
     helm:
