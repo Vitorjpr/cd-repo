@@ -29,13 +29,13 @@ ingress:
     - path: /
       pathType: Prefix
   tls: []
-resources:
-  limits:
-    cpu: 64m
-    memory: 64m
-  requests:
-    cpu: 64m
-    memory: 64m
+# resources:
+#   limits:
+#     cpu: 64m
+#     memory: 64m
+#   requests:
+#     cpu: 64m
+#     memory: 64m
 autoscaling:
   enabled: true
   minReplicas: 1
