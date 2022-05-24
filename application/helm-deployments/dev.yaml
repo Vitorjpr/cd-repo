@@ -1,6 +1,6 @@
 replicaCount: 1
 image:
-  repository: vitorjpr/api-go
+  repository: vitorjpr/go-api
   pullPolicy: IfNotPresent
   tag: v3
 env:
