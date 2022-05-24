@@ -11,7 +11,7 @@ spec:
   source:
     repoURL: git@github.com:Vitorjpr/cd-repo.git
     targetRevision: HEAD
-    path: charts/sample-go
+    path: charts/sample-go/go-base
 
     # helm specific config
     helm:
@@ -24,7 +24,7 @@ spec:
       # Helm values files for overriding values in the helm chart
       # The path is relative to the spec.source.path directory defined above
       valueFiles:
-      - ../applications/helm-deployments/dev.yaml
+      - ../../../application/helm-deployments/dev.yaml
       version: v3
   # Destination cluster and namespace to deploy the application
   destination:

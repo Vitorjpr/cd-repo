@@ -1,8 +1,8 @@
 replicaCount: 1
 image:
-  repository: 
+  repository: vitorjpr/go-api
   pullPolicy: IfNotPresent
-  tag: 
+  tag: v2
 env:
 - name: ECHO_LABEL
   value: Este eh um container para testes em dev
@@ -10,7 +10,7 @@ imagePullSecrets: []
 nameOverride: ''
 fullnameOverride: ''
 serviceAccount:
-  create: true
+  create: false
   annotations: {}
   name: ''
 podAnnotations: {}
@@ -31,11 +31,11 @@ ingress:
   tls: []
 resources:
   limits:
-    cpu: 128m
-    memory: 128m
+    cpu: 64m
+    memory: 64m
   requests:
-    cpu: 128m
-    memory: 128m
+    cpu: 64m
+    memory: 64m
 autoscaling:
   enabled: true
   minReplicas: 1

@@ -1,8 +1,8 @@
 replicaCount: 1
 image:
-  repository: 
+  repository: vitorjpr/go-api
   pullPolicy: IfNotPresent
-  tag: 
+  tag: v1
 env:
 - name: ECHO_LABEL
   value: Este eh um container para testes em stg
