@@ -1,0 +1,47 @@
+replicaCount: 1
+image:
+  repository: 
+  pullPolicy: IfNotPresent
+  tag: 
+env:
+- name: ECHO_LABEL
+  value: Este eh um container para testes em prd
+imagePullSecrets: []
+nameOverride: ''
+fullnameOverride: ''
+serviceAccount:
+  create: true
+  annotations: {}
+  name: ''
+podAnnotations: {}
+podSecurityContext: {}
+securityContext: {}
+service:
+  type: ClusterIP
+  port: 80
+ingress:
+  enabled: false
+  className: nginx
+  annotations: {}
+  hosts:
+  - host: umtestequalquer-prd.com.br
+    paths:
+    - path: /
+      pathType: Prefix
+  tls: []
+resources:
+  limits:
+    cpu: 128m
+    memory: 128m
+  requests:
+    cpu: 128m
+    memory: 128m
+autoscaling:
+  enabled: true
+  minReplicas: 1
+  maxReplicas: 3
+  targetCPUUtilizationPercentage: 80
+  targetMemoryUtilizationPercentage: 80
+nodeSelector: {}
+tolerations: []
+affinity: {}
