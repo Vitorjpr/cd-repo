@@ -2,10 +2,10 @@ replicaCount: 1
 image:
   repository: vitorjpr/go-api
   pullPolicy: IfNotPresent
-  tag: v3
+  tag: v4
 env:
 - name: APP_VERSION
-  value: v3
+  value: v4
 - name: APP_ENV
   value: dev
 imagePullSecrets: []
